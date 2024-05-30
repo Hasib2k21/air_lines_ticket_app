@@ -1,87 +1,78 @@
-import 'package:air_lines_ticket_app/base/res/media.dart';
-import 'package:air_lines_ticket_app/base/res/styles/app_styles.dart';
-import 'package:air_lines_ticket_app/base/widget/app_double_text.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+import '../base/res/media.dart';
+import '../base/res/styles/app_styles.dart';
+import '../base/widget/app_double_text.dart';
+import '../base/widget/ticket_view.dart';
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
-class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppStyles.bgColor,
-      body: ListView(
-        children: [
-          const SizedBox(
-            height: 40,
-          ),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Good Morning',
-                          style: AppStyles.headLineStyle3,
-                        ),
-                        const SizedBox(
-                          height: 5,
-                        ),
-                        Text('Book Tickets', style: AppStyles.headLineStyle1),
-                      ],
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: const DecorationImage(
-                              image: AssetImage(AppMedia.logo))),
-                      height: 50,
-                      width: 50,
-                    )
-                  ],
-                ),
-                const SizedBox(
-                  height: 25,
-                ),
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: const Color(0xFFF4F6FD),
-                  ),
-                  child: const Row(
+        backgroundColor: AppStyles.bgColor,
+        body: ListView(
+          children: [
+            const SizedBox(height:40),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Icon(
-                        FluentSystemIcons.ic_fluent_search_regular,
-                        color: Color(0xFFBFC205),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Good morning",
+                              style: AppStyles.headLineStyle3),
+                          const SizedBox(
+                            height: 5,
+                          ),
+                          Text("Book Tickets",
+                              style: AppStyles.headLineStyle1)
+                        ],
                       ),
-                      Text('Search'),
+                      Container(
+                          width: 50,
+                          height: 50,
+                          decoration: BoxDecoration(
+                              borderRadius:  BorderRadius.circular(10),
+                              image: const DecorationImage(
+                                  image: AssetImage(AppMedia.logo)
+
+                              )
+                          )
+                      )
                     ],
                   ),
-                ),
-                const SizedBox(
-                  height: 40,
-                ),
-                const AppDoubleText(
-                    bigText: "Upcoming Flights", smallText: 'View all'),
-              ],
+                  const SizedBox(height:25),
+                  Container(
+                    padding:const EdgeInsets.symmetric(horizontal:12, vertical:12),
+                    decoration: BoxDecoration(
+                      borderRadius:  BorderRadius.circular(10),
+                      color: const Color(0xFFF4F6FD),
+                    ),
+                    child: const Row(
+                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Icon(FluentSystemIcons.ic_fluent_search_regular, color:Color(0xFFBFC205)),
+                        Text("Search")
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height:40),
+                  const AppDoubleText(bigText: 'Upcoming Flights', smallText: 'View all',),
+                  const SizedBox(height:20),
+                  const TicketView()
+                ],
+              ),
             ),
-          ),
-          
-        ],
-      ),
-    );
+
+          ],
+        ));
   }
 }
