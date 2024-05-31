@@ -1,5 +1,5 @@
 import 'package:air_lines_ticket_app/base/utils/all_json.dart';
-import 'package:air_lines_ticket_app/screen/widgets/all_hotels.dart';
+import 'package:air_lines_ticket_app/screen/all_hotels.dart';
 import 'package:air_lines_ticket_app/screen/widgets/hotel.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
@@ -87,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                   bigText: 'Hotel',
                   smallText: 'View all',
                   func: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>AllHotels()));
+                    Navigator.pushNamed(context, AppRoutes.allHotels);
                   },
                 ),
                 const SizedBox(height: 20),
