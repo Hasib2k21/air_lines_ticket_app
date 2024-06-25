@@ -1,6 +1,6 @@
 import 'package:air_lines_ticket_app/base/res/styles/app_styles.dart';
 import 'package:air_lines_ticket_app/base/utils/app_routes.dart';
-import 'package:air_lines_ticket_app/screen/all_tickets.dart';
+import 'package:air_lines_ticket_app/screen/home/all_tickets.dart';
 import 'package:flutter/material.dart';
 
 class AppDoubleText extends StatelessWidget {

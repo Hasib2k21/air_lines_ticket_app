@@ -1,14 +1,15 @@
 import 'package:air_lines_ticket_app/base/utils/all_json.dart';
 import 'package:air_lines_ticket_app/screen/all_hotels.dart';
-import 'package:air_lines_ticket_app/screen/widgets/hotel.dart';
+import 'package:air_lines_ticket_app/screen/home/widgets/hotel.dart';
+
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
-import '../base/res/media.dart';
-import '../base/res/styles/app_styles.dart';
-import '../base/utils/app_routes.dart';
-import '../base/widget/app_double_text.dart';
-import '../base/widget/ticket_view.dart';
+import '../../base/res/media.dart';
+import '../../base/res/styles/app_styles.dart';
+import '../../base/utils/app_routes.dart';
+import '../../base/widget/app_double_text.dart';
+import '../../base/widget/ticket_view.dart';
 
 class HomeScreen extends StatelessWidget {
 
