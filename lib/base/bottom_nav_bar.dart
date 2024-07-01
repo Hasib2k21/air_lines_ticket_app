@@ -1,12 +1,13 @@
 
-import 'package:air_lines_ticket_app/screen/home/home_screen.dart';
-import 'package:air_lines_ticket_app/screen/search/search_screen.dart';
-import 'package:air_lines_ticket_app/screen/ticket/ticket_screen.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../screens/home/home_screen.dart';
+import '../screens/search/search_screen.dart';
+import '../screens/ticket/ticket_screen.dart';
 
 class BottomNavBar extends StatefulWidget {
-  const BottomNavBar({super.key});
+  const BottomNavBar({Key? key}) : super(key: key);
 
   @override
   State<BottomNavBar> createState() => _BottomNavBarState();
@@ -14,6 +15,7 @@ class BottomNavBar extends StatefulWidget {
 
 class _BottomNavBarState extends State<BottomNavBar> {
   //list is iterated using index
+  
   final appScreens = [
     const HomeScreen(),
     const SearchScreen(),
@@ -32,8 +34,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
+
       body: appScreens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
@@ -49,7 +51,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           ),
           BottomNavigationBarItem(
             icon: Icon(FluentSystemIcons.ic_fluent_search_regular),
-            activeIcon: Icon(FluentSystemIcons.ic_fluent_search_filled),
+            activeIcon: Icon(FluentSystemIcons.ic_fluent_search_info_filled),
             label: "Search",
           ),
           BottomNavigationBarItem(
