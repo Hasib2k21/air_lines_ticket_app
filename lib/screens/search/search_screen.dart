@@ -4,6 +4,7 @@ import 'package:air_lines_ticket_app/screens/search/widgets/find_tickets.dart';
 import 'package:air_lines_ticket_app/screens/search/widgets/ticket_promotion.dart';
 import 'package:flutter/material.dart';
 
+
 import '../../base/res/styles/app_styles.dart';
 import '../../base/utils/app_routes.dart';
 import '../../base/widgets/app_double_text.dart';

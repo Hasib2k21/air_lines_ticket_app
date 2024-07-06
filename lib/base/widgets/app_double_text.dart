@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../res/styles/app_styles.dart';
 
-
 class AppDoubleText extends StatelessWidget {
   const AppDoubleText(
       {Key? key,

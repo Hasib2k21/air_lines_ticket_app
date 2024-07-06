@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../../base/res/styles/app_styles.dart';
 
-
 class TicketPositionedCircle extends StatelessWidget {
   final bool? pos;
   const TicketPositionedCircle({super.key, this.pos});

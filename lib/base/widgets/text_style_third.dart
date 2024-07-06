@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../res/styles/app_styles.dart';
 
-
 class TextStyleThird extends StatelessWidget {
   final String text;
   final bool? isColor;

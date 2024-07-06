@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
 import '../../base/res/styles/app_styles.dart';
 import '../../base/utils/all_json.dart';
 import '../../base/utils/app_routes.dart';

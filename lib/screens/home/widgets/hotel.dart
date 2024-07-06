@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../../../base/res/styles/app_styles.dart';
 
-
 class Hotel extends StatelessWidget {
   final Map<String,dynamic> hotel;
   const Hotel({super.key, required this.hotel});

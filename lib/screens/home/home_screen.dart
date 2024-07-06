@@ -3,14 +3,13 @@ import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
 import '../../base/res/media.dart';
 import '../../base/res/styles/app_styles.dart';
 import '../../base/utils/all_json.dart';
 import '../../base/utils/app_routes.dart';
 import '../../base/widgets/app_double_text.dart';
+import '../../base/widgets/heading_text.dart';
 import '../../base/widgets/ticket_view.dart';
-
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -34,10 +33,12 @@ class HomeScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Good morning", style: AppStyles.headLineStyle3),
+
                           const SizedBox(
                             height: 5,
                           ),
-                          Text("Book Tickets", style: AppStyles.headLineStyle1)
+                          const HeadingText(text: "Book Tickets", isColor: false),
+
                         ],
                       ),
                       Container(
@@ -83,7 +84,6 @@ class HomeScreen extends StatelessWidget {
                                 onTap: () {
                                   var index = ticketList.indexOf(singleTicket);
 
-                                  print("I am tapped on the ticket $index");
 
                                   Navigator.pushNamed(
                                       context, AppRoutes.ticketScreen,

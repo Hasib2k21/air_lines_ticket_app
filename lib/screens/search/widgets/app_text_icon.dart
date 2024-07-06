@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../../../base/res/styles/app_styles.dart';
 
-
 class AppTextIcon extends StatelessWidget {
   final IconData icon;
   final String text;

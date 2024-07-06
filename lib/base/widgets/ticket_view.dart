@@ -1,13 +1,11 @@
 import 'package:air_lines_ticket_app/base/widgets/text_style_fourth.dart';
 import 'package:air_lines_ticket_app/base/widgets/text_style_third.dart';
 import 'package:flutter/material.dart';
-
 import '../res/styles/app_styles.dart';
 import 'app_coloum_text_layout.dart';
 import 'app_layoutbuilder_widget.dart';
 import 'big_circle.dart';
 import 'big_dot.dart';
-
 
 class TicketView extends StatelessWidget {
   final Map<String, dynamic> ticket;

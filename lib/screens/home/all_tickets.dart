@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+
 import '../../base/utils/all_json.dart';
 import '../../base/utils/app_routes.dart';
 import '../../base/widgets/ticket_view.dart';
-
 
 class AllTickets extends StatelessWidget {
   const AllTickets({super.key});

@@ -2,7 +2,6 @@ import 'package:air_lines_ticket_app/screens/ticket/widgets/ticket_positined_cir
 import 'package:barcode_widget/barcode_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../../base/res/media.dart';
 import '../../base/res/styles/app_styles.dart';
 import '../../base/utils/all_json.dart';

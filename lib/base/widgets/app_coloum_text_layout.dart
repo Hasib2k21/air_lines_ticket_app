@@ -2,6 +2,7 @@ import 'package:air_lines_ticket_app/base/widgets/text_style_fourth.dart';
 import 'package:air_lines_ticket_app/base/widgets/text_style_third.dart';
 import 'package:flutter/cupertino.dart';
 
+
 class AppColumnTextLayout extends StatelessWidget {
   final String topText;
   final String bottomText;
